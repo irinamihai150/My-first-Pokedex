@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const BestPokemon = () => {
   const abilities = ["Anticipation", "Adaptability", "Run-Away"];
@@ -14,4 +14,4 @@ const BestPokemon = () => {
   );
 };
 
-export default BestPokemon
+export default BestPokemon;

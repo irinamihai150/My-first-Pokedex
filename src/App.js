@@ -5,18 +5,14 @@ import Logo from "./Logo";
 import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
 
-// function BestPokemon() {
-//   return (
-//     <div>
-//       <p>My favorite pokemon is Pikatchu</p>
-//     </div>
-//   );
-// }
+// const Title = () => {
+//   return <h1> Welcome to pokedex</h1>;
+// };
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to Pokedex</h1>
+      {/* <Title>Welcome to Pokedex</Title> */}
       <Logo />
       <BestPokemon />
       <CaughtPokemon />

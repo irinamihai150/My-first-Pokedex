@@ -1,12 +1,11 @@
-import React from 'react'
+import React from "react";
 const CaughtPokemon = () => {
-  const date = new Date(Date.UTC(2022, 10, 11, 3, 0, 0));
+  const date = new Date().toLocaleDateString();
   return (
     <div>
-      <p>Caught 0 Pokemon </p>
-      {/* <p>{date}</p> */}
+      <p>Caught 0 Pokemon on {date}</p>
     </div>
   );
 };
 
-export default CaughtPokemon
+export default CaughtPokemon;
