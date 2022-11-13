@@ -5,17 +5,14 @@ import Logo from "./Logo";
 import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
 
-// const Title = () => {
-//   return <h1> Welcome to pokedex</h1>;
-// };
-
 function App() {
+  const abilities = ["Anticipation", "Adaptability", "Run-Away"];
+  const date = new Date().toLocaleDateString();
   return (
     <div className="App">
-      {/* <Title>Welcome to Pokedex</Title> */}
-      <Logo />
-      <BestPokemon />
-      <CaughtPokemon />
+      <Logo appName={"pokedex"} />
+      <BestPokemon abilitiesProp={abilities} />
+      <CaughtPokemon dateProp={date} />
     </div>
   );
 }
