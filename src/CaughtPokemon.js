@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 
-const CaughtPokemon = ({ dateProp }) => {
+const CaughtPokemon = (props) => {
   // const [caught, setcaught] = useState(0);
- const [caught, setcaught] = useState(["Charizard","Evee","Lucario", "Snorlax"]);
+  const [caught, setcaught] = useState([
+    "Charizard",
+    "Evee",
+    "Lucario",
+    "Snorlax",
+  ]);
 
-  function catchPokemon(){
-   setcaught(caught + 1);
+  function catchPokemon() {
+    setcaught(caught.concat("Pikachu", "Ditto"));
   }
   // function CaughtPokemon(){
   //   setcaught(caught.concat("PiPlup","Ditto"));
@@ -14,15 +19,13 @@ const CaughtPokemon = ({ dateProp }) => {
     <div>
       <button onClick={catchPokemon}>Catch Me</button>
       <p>
-        Caught {caught.length} Pokemon on {dateProp}
+        Caught {caught.length} Pokemon on {props.date}
       </p>
-      {/* <ul>
-        {caught.map((i)=> {
-          return(
-            <li>{i}</li>
-          );
+      <ul>
+        {caught.map((item, index) => {
+          return <li key={index}>{item}</li>;
         })}
-      </ul> */}
+      </ul>
     </div>
   );
 };
