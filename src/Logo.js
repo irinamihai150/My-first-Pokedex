@@ -7,12 +7,11 @@ const Logo = (props) => {
   return (
     <div>
       <header className="App-header">
-        <h1>Welcome to {appName}</h1>
+        <h1 onClick={props.handleClick}>Welcome to {appName}</h1>
         <img
-          src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png"
+          src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/064.png"
           className="App-logo"
           alt="logo"
-          onClick={props.handleClick}
         />
       </header>
     </div>
