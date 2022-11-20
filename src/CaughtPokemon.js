@@ -9,9 +9,7 @@ const CaughtPokemon = (props) => {
     const randomPokemon = Math.floor(Math.random() * pok.length);
     setcaught(caught.concat(pok[randomPokemon]));
   }
-  // function CaughtPokemon(){
-  //   setcaught(caught.concat("PiPlup","Ditto"));
-  // }
+
   return (
     <div>
       <button onClick={catchPokemon}>Catch Me</button>
