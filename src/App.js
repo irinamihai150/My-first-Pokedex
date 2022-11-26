@@ -1,10 +1,11 @@
 import React from "react";
-// import logo from "./logo.svg";
 import "./App.css";
 import Logo from "./Logo";
 import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
-
+// import PokemonMoves from "./PokemonMoves";
+import PokemonMovesSelector from "./PokemonMovesSelector";
+import PokemonCity from "./PokemonCity";
 function App() {
   function logWhenClicked() {
     console.log("hey");
@@ -13,10 +14,13 @@ function App() {
   const date = new Date().toLocaleDateString();
 
   return (
-    <div className="App">
+    <div>
       <Logo handleClick={logWhenClicked} />
       <BestPokemon abilitiesProp={abilities} />
       <CaughtPokemon date={date} />
+      {/* <PokemonMoves /> */}
+      <PokemonMovesSelector />
+      <PokemonCity />
     </div>
   );
 }
