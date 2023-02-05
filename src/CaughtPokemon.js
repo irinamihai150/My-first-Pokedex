@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 const CaughtPokemon = (props) => {
   // const [caught, setcaught] = useState(0);
   const [caught, setcaught] = useState([]);
@@ -33,5 +34,33 @@ const CaughtPokemon = (props) => {
     </div>
   );
 };
+
+
+// class CaughtPokemon extends Component {
+//   state = {
+//     count:  0 caughtPokemon,
+//   };
+
+//   render() {
+//     return (
+//       <div>
+//         <input
+//           type="text"
+//           value={pokemonNameInput}
+//           onChange={handleInputChange}
+//         />
+//         <button onClick={catchPokemon}>Catch Me</button>
+//         <p>
+//           Caught {caught.length} Pokemon on {props.date}
+//         </p>
+//         <ul>
+//           {caught.map((item, index) => {
+//             return <li key={index}>{item}</li>;
+//           })}
+//         </ul>
+//       </div>
+//     );
+//   }
+// }
 
 export default CaughtPokemon;
